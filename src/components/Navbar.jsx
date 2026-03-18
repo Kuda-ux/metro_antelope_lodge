@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import { Link, useLocation } from 'react-router-dom'
-import { Menu, X, Phone } from 'lucide-react'
+import { Menu, X } from 'lucide-react'
 
 const navLinks = [
   { name: 'Home', path: '/' },
@@ -26,12 +26,8 @@ export default function Navbar() {
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <Link to="/" className="flex items-center gap-3 group" onClick={() => setIsOpen(false)}>
-            <img src="/logo.png" alt="Metro Properties Logo" className="h-14 w-auto" />
-            <div className="hidden sm:block">
-              <span className="text-brand-primary font-heading font-bold text-lg leading-tight block">Metro Antelope</span>
-              <span className="text-brand-secondary text-xs font-medium tracking-wider uppercase">Lodge</span>
-            </div>
+          <Link to="/" className="flex items-center group" onClick={() => setIsOpen(false)}>
+            <img src="/logo.png" alt="Metro Antelope Lodge" className="h-16 md:h-20 w-auto" />
           </Link>
 
           {/* Desktop Nav */}
@@ -49,13 +45,6 @@ export default function Navbar() {
                 {link.name}
               </Link>
             ))}
-            <a
-              href="tel:+263780292970"
-              className="ml-2 flex items-center gap-1.5 text-sm font-medium text-gray-600 hover:text-brand-primary transition-colors"
-            >
-              <Phone className="w-3.5 h-3.5" />
-              <span className="hidden xl:inline">0780 292 970</span>
-            </a>
             <a
               href="https://wa.me/263780292970?text=Hello%2C%20I%20would%20like%20to%20book%20a%20stay%20at%20Metro%20Antelope%20Lodge."
               target="_blank"

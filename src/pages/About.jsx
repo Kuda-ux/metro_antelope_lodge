@@ -2,10 +2,10 @@ import { Link } from 'react-router-dom'
 import { Shield, Heart, Sparkles, Home, Users, ArrowRight, Award, Globe } from 'lucide-react'
 
 const IMG = {
-  header: 'https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=1920&q=80',
-  story: 'https://images.unsplash.com/photo-1564501049412-61c2a3083791?auto=format&fit=crop&w=800&q=80',
-  team: 'https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&w=800&q=80',
-  values: 'https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?auto=format&fit=crop&w=800&q=80',
+  header: '/lodge-green-1.svg',
+  story: '/lodge-green-2.svg',
+  team: '/lodge-building-2.svg',
+  values: '/lodge-building-1.svg',
 }
 
 export default function About() {

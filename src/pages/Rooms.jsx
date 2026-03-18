@@ -1,7 +1,7 @@
 import { Bed, Shield, Wifi, Wind, Droplets, Users, ArrowRight, Check } from 'lucide-react'
 
 const IMG = {
-  header: 'https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=1920&q=80',
+  header: '/lodge-building-1.svg',
   room1: 'https://images.unsplash.com/photo-1631049307264-da0ec9d70304?auto=format&fit=crop&w=800&q=80',
   room2: 'https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=800&q=80',
   room3: 'https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?auto=format&fit=crop&w=800&q=80',

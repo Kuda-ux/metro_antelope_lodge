@@ -2,13 +2,13 @@ import { Link } from 'react-router-dom'
 import { MapPin, Shield, Bed, Star, ArrowRight, Phone, Sun, Mountain, Users, Coffee } from 'lucide-react'
 
 const IMG = {
-  hero: 'https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1920&q=80',
-  about: 'https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=800&q=80',
+  hero: '/lodge-green-1.svg',
+  about: '/lodge-green-2.svg',
   room1: 'https://images.unsplash.com/photo-1631049307264-da0ec9d70304?auto=format&fit=crop&w=600&q=80',
   room2: 'https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=600&q=80',
   room3: 'https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?auto=format&fit=crop&w=600&q=80',
-  location: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=800&q=80',
-  cta: 'https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=1920&q=80',
+  location: '/lodge-building-1.svg',
+  cta: '/lodge-building-2.svg',
 }
 
 export default function Home() {
@@ -17,7 +17,7 @@ export default function Home() {
       {/* Hero Section */}
       <section className="relative min-h-[90vh] flex items-center overflow-hidden">
         <div className="absolute inset-0">
-          <img src={IMG.hero} alt="Metro Antelope Lodge" className="w-full h-full object-cover" />
+          <img src={IMG.hero} alt="Metro Antelope Lodge — green surroundings at Antelope Dam, Matobo" className="w-full h-full object-cover" />
           <div className="absolute inset-0 bg-gradient-to-r from-brand-dark/80 via-brand-dark/60 to-brand-dark/30"></div>
         </div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-36 lg:py-44 w-full">
@@ -119,7 +119,8 @@ export default function Home() {
             <div className="relative">
               <img
                 src={IMG.about}
-                alt="Comfortable lodge interior"
+                alt="Metro Antelope Lodge green environment"
+                loading="lazy"
                 className="rounded-2xl shadow-2xl w-full h-[480px] object-cover"
               />
               <div className="absolute -bottom-6 -left-6 bg-white rounded-2xl shadow-xl p-6 hidden md:block">
@@ -176,7 +177,7 @@ export default function Home() {
                 className="bg-white rounded-2xl border border-gray-100 hover:border-brand-secondary/30 hover:shadow-xl transition-all duration-300 group overflow-hidden"
               >
                 <div className="relative h-56 overflow-hidden">
-                  <img src={room.image} alt={room.title} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                  <img src={room.image} alt={room.title} loading="lazy" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
                   <span className="absolute bottom-4 left-4 text-white font-heading font-bold text-lg">{room.title}</span>
                 </div>
@@ -246,7 +247,7 @@ export default function Home() {
               </div>
             </div>
             <div className="relative rounded-2xl overflow-hidden shadow-2xl">
-              <img src={IMG.location} alt="Matobo Hills landscape" className="w-full h-[420px] object-cover" />
+              <img src={IMG.location} alt="Metro Antelope Lodge building exterior" loading="lazy" className="w-full h-[420px] object-cover" />
               <div className="absolute inset-0 bg-gradient-to-t from-brand-dark/80 via-transparent to-transparent flex items-end p-8">
                 <div>
                   <h3 className="text-xl font-heading font-bold text-white mb-2">Antelope Dam, Matobo</h3>
@@ -270,7 +271,7 @@ export default function Home() {
       {/* CTA Section */}
       <section className="relative py-20 md:py-28 overflow-hidden">
         <div className="absolute inset-0">
-          <img src={IMG.cta} alt="Lodge poolside" className="w-full h-full object-cover" />
+          <img src={IMG.cta} alt="Metro Antelope Lodge building" loading="lazy" className="w-full h-full object-cover" />
           <div className="absolute inset-0 bg-brand-primary/85"></div>
         </div>
         <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">

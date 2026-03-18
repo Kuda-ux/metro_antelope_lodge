@@ -3,9 +3,24 @@ import { X, ChevronLeft, ChevronRight } from 'lucide-react'
 
 const galleryItems = [
   {
+    title: 'Lodge Green Environment',
+    description: 'The beautiful green surroundings of Metro Antelope Lodge',
+    image: '/lodge-green-1.svg',
+  },
+  {
+    title: 'Natural Surroundings',
+    description: 'Lush greenery surrounding the lodge grounds',
+    image: '/lodge-green-2.svg',
+  },
+  {
+    title: 'Lodge Building',
+    description: 'The welcoming exterior of Metro Antelope Lodge',
+    image: '/lodge-building-1.svg',
+  },
+  {
     title: 'Lodge Exterior',
-    description: 'The welcoming entrance of Metro Antelope Lodge',
-    image: 'https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80',
+    description: 'Our well-maintained lodge building in Antelope Dam',
+    image: '/lodge-building-2.svg',
   },
   {
     title: 'Standard Room',
@@ -23,44 +38,9 @@ const galleryItems = [
     image: 'https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=800&q=80',
   },
   {
-    title: 'Peaceful Surroundings',
-    description: 'The peaceful surroundings of the lodge',
-    image: 'https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?auto=format&fit=crop&w=800&q=80',
-  },
-  {
-    title: 'Matobo Hills View',
-    description: 'Beautiful views near the Matobo Hills area',
-    image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=800&q=80',
-  },
-  {
-    title: 'Lodge Grounds',
-    description: 'Well-maintained grounds and pathways',
-    image: 'https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=800&q=80',
-  },
-  {
     title: 'Family Room',
     description: 'Our spacious family accommodation',
     image: 'https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?auto=format&fit=crop&w=800&q=80',
-  },
-  {
-    title: 'Comfortable Living',
-    description: 'Relaxing lounge and common areas',
-    image: 'https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=800&q=80',
-  },
-  {
-    title: 'Nature & Tranquility',
-    description: 'Surrounded by the natural beauty of Zimbabwe',
-    image: 'https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=800&q=80',
-  },
-  {
-    title: 'Sunset Views',
-    description: 'Breathtaking sunset views from the lodge',
-    image: 'https://images.unsplash.com/photo-1564501049412-61c2a3083791?auto=format&fit=crop&w=800&q=80',
-  },
-  {
-    title: 'Warm Hospitality',
-    description: 'Experience genuine Zimbabwean hospitality',
-    image: 'https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&w=800&q=80',
   },
 ]
 
@@ -78,7 +58,7 @@ export default function Gallery() {
       {/* Page Header */}
       <section className="relative min-h-[50vh] flex items-center overflow-hidden">
         <div className="absolute inset-0">
-          <img src="https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?auto=format&fit=crop&w=1920&q=80" alt="Gallery" className="w-full h-full object-cover" />
+          <img src="/lodge-green-1.svg" alt="Metro Antelope Lodge Gallery" className="w-full h-full object-cover" />
           <div className="absolute inset-0 bg-gradient-to-r from-brand-dark/80 via-brand-dark/60 to-brand-dark/30"></div>
         </div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-28 w-full">
