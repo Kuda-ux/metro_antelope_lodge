@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Phone, Mail, MapPin, Clock, Send, MessageCircle, ArrowRight } from 'lucide-react'
+import { Phone, Mail, MapPin, Clock, Send, MessageCircle, ArrowRight, Navigation, Car } from 'lucide-react'
 
 const IMG = {
   header: '/lodge-compound.jpg',
@@ -95,7 +95,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <h3 className="font-semibold text-brand-dark mb-1">Location</h3>
-                    <p className="text-gray-600">Antelope Dam, Maphisa,<br />Matobo, Zimbabwe</p>
+                    <p className="text-gray-600">Plot Number 1 Tabasnyoni,<br />Antelope Mine, Maphisa,<br />Matobo, Zimbabwe</p>
                   </div>
                 </div>
 
@@ -221,6 +221,103 @@ export default function Contact() {
                     </p>
                   </form>
                 )}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Google Map Section */}
+      <section className="py-20 md:py-28 bg-brand-light">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center max-w-2xl mx-auto mb-12">
+            <span className="text-brand-secondary font-semibold text-sm uppercase tracking-wider">Find Us</span>
+            <h2 className="text-3xl md:text-4xl font-heading font-bold text-brand-dark mt-3 mb-4">
+              Our Location on the Map
+            </h2>
+            <p className="text-gray-600 text-lg">
+              Plot Number 1 Tabasnyoni, Antelope Mine, Maphisa — easily accessible and waiting to welcome you.
+            </p>
+          </div>
+
+          <div className="grid lg:grid-cols-3 gap-6">
+            {/* Map */}
+            <div className="lg:col-span-2 relative rounded-2xl overflow-hidden shadow-2xl border-4 border-white group">
+              <div className="aspect-[16/10] w-full bg-gray-200">
+                <iframe
+                  title="Metro Antelope Lodge — Plot 1 Tabasnyoni, Antelope Mine, Maphisa"
+                  src="https://www.google.com/maps?q=Plot+1+Tabasnyoni+Antelope+Mine+Maphisa+Matobo+Zimbabwe&t=&z=14&ie=UTF8&iwloc=&output=embed"
+                  width="100%"
+                  height="100%"
+                  style={{ border: 0 }}
+                  allowFullScreen=""
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  className="w-full h-full"
+                ></iframe>
+              </div>
+              {/* Floating address pill */}
+              <div className="absolute top-4 left-4 bg-white/95 backdrop-blur-sm rounded-xl shadow-lg px-4 py-3 max-w-xs pointer-events-none">
+                <div className="flex items-start gap-2">
+                  <div className="w-8 h-8 bg-brand-primary rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
+                    <MapPin className="w-4 h-4 text-white" />
+                  </div>
+                  <div>
+                    <p className="font-heading font-bold text-brand-dark text-sm">Metro Antelope Lodge</p>
+                    <p className="text-xs text-gray-600 leading-snug">Plot 1 Tabasnyoni, Antelope Mine, Maphisa</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Directions Sidebar */}
+            <div className="space-y-4">
+              <div className="bg-gradient-to-br from-brand-primary to-blue-900 rounded-2xl p-6 text-white shadow-xl">
+                <div className="w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center mb-4">
+                  <Navigation className="w-6 h-6 text-white" />
+                </div>
+                <h3 className="font-heading font-bold text-xl mb-2">Get Directions</h3>
+                <p className="text-blue-100 text-sm mb-5 leading-relaxed">
+                  Open the address directly in Google Maps for turn-by-turn directions to the lodge.
+                </p>
+                <a
+                  href="https://www.google.com/maps/dir/?api=1&destination=Plot+1+Tabasnyoni+Antelope+Mine+Maphisa+Matobo+Zimbabwe"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 bg-white text-brand-primary hover:bg-gray-100 px-5 py-2.5 rounded-xl font-semibold text-sm transition-all duration-200 hover:shadow-lg w-full justify-center"
+                >
+                  Open in Google Maps
+                  <ArrowRight className="w-4 h-4" />
+                </a>
+              </div>
+
+              <div className="bg-white rounded-2xl p-6 shadow-md border border-gray-100">
+                <div className="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center mb-4">
+                  <Car className="w-6 h-6 text-green-600" />
+                </div>
+                <h3 className="font-heading font-bold text-brand-dark mb-2">Driving from Bulawayo</h3>
+                <p className="text-sm text-gray-600 leading-relaxed">
+                  Take the Bulawayo–Maphisa road south for approximately 100km. Once in Maphisa, follow signs to Antelope Mine. The lodge is located at Plot 1 Tabasnyoni.
+                </p>
+              </div>
+
+              <div className="bg-white rounded-2xl p-6 shadow-md border border-gray-100">
+                <div className="w-12 h-12 bg-yellow-100 rounded-xl flex items-center justify-center mb-4">
+                  <MessageCircle className="w-6 h-6 text-yellow-600" />
+                </div>
+                <h3 className="font-heading font-bold text-brand-dark mb-2">Need Help Finding Us?</h3>
+                <p className="text-sm text-gray-600 leading-relaxed mb-3">
+                  WhatsApp us your location and we'll guide you in.
+                </p>
+                <a
+                  href="https://wa.me/263780292970?text=Hello%2C%20I%20need%20directions%20to%20Metro%20Antelope%20Lodge%2C%20Plot%201%20Tabasnyoni%2C%20Antelope%20Mine%2C%20Maphisa."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 text-green-600 hover:text-green-700 font-semibold text-sm transition-colors"
+                >
+                  Chat on WhatsApp
+                  <ArrowRight className="w-4 h-4" />
+                </a>
               </div>
             </div>
           </div>

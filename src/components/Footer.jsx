@@ -63,7 +63,7 @@ export default function Footer() {
               </li>
               <li className="flex items-start gap-3">
                 <MapPin className="w-4 h-4 text-brand-secondary mt-0.5 flex-shrink-0" />
-                <span className="text-sm text-gray-400">Antelope Dam, Maphisa, Matobo, Zimbabwe</span>
+                <span className="text-sm text-gray-400">Plot 1 Tabasnyoni, Antelope Mine,<br />Maphisa, Matobo, Zimbabwe</span>
               </li>
             </ul>
           </div>
