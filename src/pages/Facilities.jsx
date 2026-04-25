@@ -15,32 +15,14 @@ import {
   Star,
 } from 'lucide-react'
 
-// Curated Unsplash photos that authentically depict each facility in a lodge setting.
-// Each image has a fallback to a real lodge photo in case the external image fails to load.
+// Real facility images
 const IMG = {
   header: '/garden-view.jpg',
-  // Modest outdoor lodge pool surrounded by palms
-  pool: 'https://images.unsplash.com/photo-1540541338287-41700207dee6?auto=format&fit=crop&w=1200&q=80',
-  poolFallback: '/garden-palms.jpg',
-  // Warm rustic lodge restaurant / dining
-  restaurant: 'https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1200&q=80',
-  restaurantFallback: '/lodge-compound.jpg',
-  // Meeting room with conference table
-  conference: 'https://images.unsplash.com/photo-1431540015161-0bf868a2d407?auto=format&fit=crop&w=1200&q=80',
-  conferenceFallback: '/modern-room-exterior.jpg',
-  // Outdoor playground / swings
-  kids: 'https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?auto=format&fit=crop&w=1200&q=80',
-  kidsFallback: '/lodge-green-lawn.jpg',
-  // Wooden boat on a calm lake — matches Antelope Dam atmosphere
-  boats: 'https://images.unsplash.com/photo-1499591934245-40b55745b905?auto=format&fit=crop&w=1200&q=80',
-  boatsFallback: '/antelope-dam.jpg',
-}
-
-// Fallback handler — swaps to local lodge photo if external image 404s
-const handleImgError = (fallback) => (e) => {
-  if (e.target.src !== window.location.origin + fallback) {
-    e.target.src = fallback
-  }
+  pool: '/facility-pool.jpg',
+  restaurant: '/facility-restaurant.jpg',
+  conference: '/facility-conference.jpg',
+  kids: '/facility-kids.jpg',
+  boats: '/facility-boating.webp',
 }
 
 const facilities = [
@@ -49,7 +31,6 @@ const facilities = [
     tagline: 'Cool off in style',
     icon: Waves,
     image: IMG.pool,
-    fallback: IMG.poolFallback,
     description:
       'Dive into our refreshing swimming pool surrounded by lush gardens — the perfect way to cool off after a day exploring the Matobo Hills. Loungers, shaded seating, and pool-side service create a relaxing atmosphere for adults and supervised children alike.',
     features: [
@@ -67,7 +48,6 @@ const facilities = [
     tagline: 'Authentic Zimbabwean flavours',
     icon: Utensils,
     image: IMG.restaurant,
-    fallback: IMG.restaurantFallback,
     description:
       'Savour hearty Zimbabwean dishes alongside international favourites in our warm and welcoming dining space. Our bar serves cold drinks, local beer, and quality wines — the perfect place to wind down with friends and family after a day in Matobo.',
     features: [
@@ -85,7 +65,6 @@ const facilities = [
     tagline: 'Glide across Antelope Dam',
     icon: Sailboat,
     image: IMG.boats,
-    fallback: IMG.boatsFallback,
     description:
       'Step right onto the water with our boating experience on Antelope Dam. Whether you fancy a peaceful paddle, a sunset cruise, or a fishing trip, our boats let you enjoy the dam\'s beauty up close — spotting birdlife, soaking in the views, and creating memories on the water.',
     features: [
@@ -103,7 +82,6 @@ const facilities = [
     tagline: 'Meet, plan & inspire',
     icon: Briefcase,
     image: IMG.conference,
-    fallback: IMG.conferenceFallback,
     description:
       'Host your business meetings, workshops, or team retreats in our purpose-built conference centre. Equipped with modern facilities, fast WiFi, and the natural calm of Antelope Dam, our venue is ideal for productive sessions away from the city.',
     features: [
@@ -121,7 +99,6 @@ const facilities = [
     tagline: 'Where children make memories',
     icon: Baby,
     image: IMG.kids,
-    fallback: IMG.kidsFallback,
     description:
       'A safe, secure outdoor play area designed for little adventurers. Swings, climbing frames, and open lawn space let children run, laugh, and explore while parents relax nearby — making Metro Antelope Lodge the perfect family destination.',
     features: [
@@ -205,7 +182,6 @@ export default function Facilities() {
                       src={f.image}
                       alt={`${f.title} at Metro Antelope Lodge`}
                       loading="lazy"
-                      onError={handleImgError(f.fallback)}
                       className="w-full h-[380px] md:h-[440px] object-cover group-hover:scale-105 transition-transform duration-700"
                     />
                     <div className={`absolute inset-0 bg-gradient-to-t ${f.accent} opacity-20 group-hover:opacity-10 transition-opacity duration-500`}></div>
