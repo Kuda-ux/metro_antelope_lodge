@@ -4,6 +4,7 @@ import Footer from './components/Footer'
 import WhatsAppButton from './components/WhatsAppButton'
 import Chatbot from './components/Chatbot'
 import ScrollToTop from './components/ScrollToTop'
+import SEOHead from './components/SEOHead'
 import Home from './pages/Home'
 import About from './pages/About'
 import Rooms from './pages/Rooms'
@@ -14,6 +15,7 @@ function App() {
   return (
     <div className="min-h-screen flex flex-col">
       <ScrollToTop />
+      <SEOHead />
       <Navbar />
       <main className="flex-1">
         <Routes>
