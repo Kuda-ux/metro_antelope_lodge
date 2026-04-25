@@ -4,14 +4,15 @@ import {
   Utensils,
   Briefcase,
   Baby,
+  Sailboat,
   ArrowRight,
-  Clock,
   Check,
-  Wifi,
   Coffee,
   Users,
   Calendar,
   Sparkles,
+  Heart,
+  Star,
 } from 'lucide-react'
 
 const IMG = {
@@ -20,6 +21,7 @@ const IMG = {
   restaurant: 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1200&q=80',
   conference: 'https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1200&q=80',
   kids: 'https://images.unsplash.com/photo-1597248881519-db089d3744a5?auto=format&fit=crop&w=1200&q=80',
+  boats: 'https://images.unsplash.com/photo-1502920917128-1aa500764cbd?auto=format&fit=crop&w=1200&q=80',
 }
 
 const facilities = [
@@ -29,7 +31,7 @@ const facilities = [
     icon: Waves,
     image: IMG.pool,
     description:
-      'A clean, refreshing swimming pool surrounded by our lush gardens — perfect for cooling off after a day exploring the Matobo Hills. Loungers, shaded seating, and pool-side service create a relaxing atmosphere for adults and supervised children alike.',
+      'Dive into our refreshing swimming pool surrounded by lush gardens — the perfect way to cool off after a day exploring the Matobo Hills. Loungers, shaded seating, and pool-side service create a relaxing atmosphere for adults and supervised children alike.',
     features: [
       'Outdoor pool with garden views',
       'Loungers & shaded seating',
@@ -46,7 +48,7 @@ const facilities = [
     icon: Utensils,
     image: IMG.restaurant,
     description:
-      'Enjoy hearty Zimbabwean dishes alongside international favourites in our warm and welcoming dining space. Our bar serves cold drinks, local beer, and quality wines — the perfect place to wind down with friends and family after a day in Matobo.',
+      'Savour hearty Zimbabwean dishes alongside international favourites in our warm and welcoming dining space. Our bar serves cold drinks, local beer, and quality wines — the perfect place to wind down with friends and family after a day in Matobo.',
     features: [
       'Traditional Zimbabwean cuisine',
       'International menu options',
@@ -56,6 +58,23 @@ const facilities = [
     accent: 'from-amber-500 to-orange-600',
     iconBg: 'bg-amber-100',
     iconColor: 'text-amber-600',
+  },
+  {
+    title: 'Boating on the Dam',
+    tagline: 'Glide across Antelope Dam',
+    icon: Sailboat,
+    image: IMG.boats,
+    description:
+      'Step right onto the water with our boating experience on Antelope Dam. Whether you fancy a peaceful paddle, a sunset cruise, or a fishing trip, our boats let you enjoy the dam\'s beauty up close — spotting birdlife, soaking in the views, and creating memories on the water.',
+    features: [
+      'Boat rides & sunset cruises',
+      'Fishing trips on request',
+      'Life jackets provided',
+      'Bird watching & photography',
+    ],
+    accent: 'from-cyan-500 to-teal-600',
+    iconBg: 'bg-cyan-100',
+    iconColor: 'text-cyan-600',
   },
   {
     title: 'Conference Centre',
@@ -97,19 +116,25 @@ export default function Facilities() {
   return (
     <>
       {/* Page Header */}
-      <section className="relative min-h-[50vh] flex items-center overflow-hidden">
+      <section className="relative min-h-[60vh] flex items-center overflow-hidden">
         <div className="absolute inset-0">
           <img src={IMG.header} alt="Metro Antelope Lodge facilities and services" className="w-full h-full object-cover" />
-          <div className="absolute inset-0 bg-gradient-to-r from-brand-dark/80 via-brand-dark/60 to-brand-dark/30"></div>
+          <div className="absolute inset-0 bg-gradient-to-br from-brand-primary/85 via-brand-dark/70 to-cyan-900/60"></div>
+          {/* Floating decorative blobs */}
+          <div className="absolute top-20 -left-20 w-72 h-72 bg-brand-secondary/30 rounded-full blur-3xl animate-pulse"></div>
+          <div className="absolute bottom-10 right-10 w-96 h-96 bg-cyan-400/20 rounded-full blur-3xl"></div>
         </div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-28 w-full">
-          <div className="animate-fade-in">
-            <span className="text-brand-secondary font-semibold text-sm uppercase tracking-wider">Facilities & Services</span>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-white mt-3 mb-4">
-              More Than Just a Stay
+          <div className="animate-fade-in max-w-3xl">
+            <div className="inline-flex items-center gap-2 bg-white/15 backdrop-blur-md text-white text-sm font-medium px-5 py-2.5 rounded-full mb-6 border border-white/20">
+              <Sparkles className="w-4 h-4 text-brand-secondary" />
+              <span>Everything You Need, All in One Place</span>
+            </div>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-white mb-5 leading-[1.1]">
+              Facilities & <span className="text-brand-secondary">Activities</span>
             </h1>
-            <p className="text-xl text-gray-200 max-w-2xl">
-              Discover the new facilities coming soon to Metro Antelope Lodge — designed to make every guest feel at home, whether for leisure, family, or business.
+            <p className="text-xl text-gray-100 max-w-2xl leading-relaxed">
+              From poolside relaxation to lakeside boating, gourmet dining to family fun — Metro Antelope Lodge offers a complete experience for every guest.
             </p>
           </div>
         </div>
@@ -120,22 +145,22 @@ export default function Facilities() {
         </div>
       </section>
 
-      {/* Intro Banner */}
-      <section className="py-12 bg-brand-light">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-gradient-to-r from-brand-primary to-blue-900 rounded-2xl p-8 md:p-10 text-white shadow-xl relative overflow-hidden">
-            <div className="absolute top-0 right-0 w-64 h-64 bg-brand-secondary/20 rounded-full blur-3xl -translate-y-1/2 translate-x-1/4"></div>
-            <div className="relative flex flex-col md:flex-row items-start md:items-center gap-6">
-              <div className="w-14 h-14 bg-white/20 rounded-2xl flex items-center justify-center flex-shrink-0">
-                <Sparkles className="w-7 h-7 text-brand-secondary" />
+      {/* Stats / Highlights Strip */}
+      <section className="py-10 bg-white border-b border-gray-100">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-2 md:grid-cols-5 gap-6 text-center">
+            {[
+              { num: '5+', label: 'On-Site Activities', color: 'text-brand-primary' },
+              { num: '24/7', label: 'Hospitality', color: 'text-sky-600' },
+              { num: '✨', label: 'Family Friendly', color: 'text-amber-500' },
+              { num: '🚣', label: 'Lakeside Fun', color: 'text-cyan-600' },
+              { num: '❤️', label: 'Made With Love', color: 'text-rose-500' },
+            ].map((s, i) => (
+              <div key={i} className="flex flex-col items-center">
+                <span className={`text-3xl md:text-4xl font-heading font-bold ${s.color}`}>{s.num}</span>
+                <span className="text-xs md:text-sm text-gray-500 mt-1 font-medium">{s.label}</span>
               </div>
-              <div className="flex-1">
-                <h2 className="text-2xl font-heading font-bold mb-2">Exciting New Facilities Opening Soon</h2>
-                <p className="text-blue-100 leading-relaxed">
-                  We are expanding Metro Antelope Lodge to give you even more reasons to visit. Our new pool, restaurant & bar, conference centre, and kids' play area are being prepared with the same care and attention that has always defined us.
-                </p>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </section>
@@ -160,10 +185,17 @@ export default function Facilities() {
                     />
                     <div className={`absolute inset-0 bg-gradient-to-t ${f.accent} opacity-20 group-hover:opacity-10 transition-opacity duration-500`}></div>
 
-                    {/* Coming Soon badge */}
+                    {/* Available badge */}
                     <div className="absolute top-4 left-4 bg-white/95 backdrop-blur-sm rounded-full px-4 py-2 shadow-lg flex items-center gap-2">
-                      <Clock className="w-4 h-4 text-brand-primary" />
-                      <span className="text-xs font-bold text-brand-dark uppercase tracking-wider">Opening Soon</span>
+                      <span className="relative flex w-2.5 h-2.5">
+                        <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+                        <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-green-500"></span>
+                      </span>
+                      <span className="text-xs font-bold text-brand-dark uppercase tracking-wider">Available</span>
+                    </div>
+                    {/* Tagline pill bottom right */}
+                    <div className="absolute bottom-4 right-4 bg-brand-primary/90 backdrop-blur-sm rounded-full px-4 py-1.5 shadow-lg">
+                      <span className="text-xs font-semibold text-white">{f.tagline}</span>
                     </div>
                   </div>
                 </div>
@@ -208,11 +240,11 @@ export default function Facilities() {
         </div>
       </section>
 
-      {/* Conference & Events Highlight */}
-      <section className="py-20 bg-brand-light">
+      {/* Built For Everyone */}
+      <section className="py-20 bg-gradient-to-br from-brand-light via-white to-cyan-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-2xl mx-auto mb-12">
-            <span className="text-brand-secondary font-semibold text-sm uppercase tracking-wider">Why Choose Us</span>
+            <span className="text-brand-secondary font-semibold text-sm uppercase tracking-wider">Why Guests Love Us</span>
             <h2 className="text-3xl md:text-4xl font-heading font-bold text-brand-dark mt-3 mb-4">
               Built for Every Kind of Guest
             </h2>
@@ -222,16 +254,16 @@ export default function Facilities() {
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
-              { icon: Users, title: 'Families', desc: 'Kids play area & spacious family rooms' },
-              { icon: Briefcase, title: 'Business', desc: 'Conference centre with WiFi & power' },
-              { icon: Calendar, title: 'Events', desc: 'Venue hire for special occasions' },
-              { icon: Coffee, title: 'Leisure', desc: 'Pool, restaurant & relaxing gardens' },
+              { icon: Users, title: 'Families', desc: 'Kids play area & spacious family rooms', gradient: 'from-green-400 to-emerald-500' },
+              { icon: Briefcase, title: 'Business', desc: 'Conference centre with WiFi & power', gradient: 'from-blue-500 to-brand-primary' },
+              { icon: Calendar, title: 'Events', desc: 'Venue hire for special occasions', gradient: 'from-amber-400 to-orange-500' },
+              { icon: Heart, title: 'Leisure', desc: 'Pool, boating, restaurant & gardens', gradient: 'from-rose-400 to-pink-500' },
             ].map((item, i) => (
-              <div key={i} className="bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl border border-gray-100 transition-all duration-300 hover:-translate-y-1">
-                <div className="w-12 h-12 bg-brand-primary/10 rounded-xl flex items-center justify-center mb-4">
-                  <item.icon className="w-6 h-6 text-brand-primary" />
+              <div key={i} className="bg-white rounded-2xl p-6 shadow-sm hover:shadow-2xl border border-gray-100 transition-all duration-300 hover:-translate-y-2 group">
+                <div className={`w-14 h-14 bg-gradient-to-br ${item.gradient} rounded-2xl flex items-center justify-center mb-4 group-hover:scale-110 group-hover:rotate-3 transition-all duration-300 shadow-lg`}>
+                  <item.icon className="w-7 h-7 text-white" />
                 </div>
-                <h3 className="font-heading font-bold text-brand-dark mb-2">{item.title}</h3>
+                <h3 className="font-heading font-bold text-brand-dark mb-2 text-lg">{item.title}</h3>
                 <p className="text-sm text-gray-600 leading-relaxed">{item.desc}</p>
               </div>
             ))}
@@ -246,20 +278,25 @@ export default function Facilities() {
           <div className="absolute inset-0 bg-brand-primary/85"></div>
         </div>
         <div className="relative max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <div className="flex items-center justify-center gap-1 mb-4">
+            {[...Array(5)].map((_, i) => (
+              <Star key={i} className="w-5 h-5 text-yellow-400" fill="currentColor" />
+            ))}
+          </div>
           <h2 className="text-3xl md:text-4xl font-heading font-bold text-white mb-6">
-            Be the First to Experience Our New Facilities
+            Experience It All at Metro Antelope Lodge
           </h2>
           <p className="text-xl text-blue-100 mb-10">
-            Reserve your stay or get notified when our new pool, restaurant, conference centre, and kids' area open.
+            Pool, boating, gourmet dining, conferences, and family fun — your perfect Matobo getaway is just a WhatsApp message away.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="https://wa.me/263780292970?text=Hello%2C%20please%20notify%20me%20when%20the%20new%20facilities%20at%20Metro%20Antelope%20Lodge%20open."
+              href="https://wa.me/263780292970?text=Hello%2C%20I%20would%20like%20to%20book%20a%20stay%20and%20enjoy%20the%20facilities%20at%20Metro%20Antelope%20Lodge."
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2 bg-green-500 hover:bg-green-600 text-white px-8 py-4 rounded-xl text-lg font-semibold transition-all duration-300 hover:shadow-xl hover:scale-105"
             >
-              Notify Me on WhatsApp
+              Book on WhatsApp
               <ArrowRight className="w-5 h-5" />
             </a>
             <Link

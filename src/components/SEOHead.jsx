@@ -21,8 +21,8 @@ const pageSEO = {
   },
   '/facilities': {
     title: 'Facilities & Services | Metro Antelope Lodge — Matobo, Zimbabwe',
-    description: 'Discover the new facilities at Metro Antelope Lodge — swimming pool, restaurant & bar, conference centre, and kids\' play area. Coming soon to Antelope Dam, Maphisa, Matobo, Zimbabwe. Perfect for families, business and leisure guests.',
-    keywords: 'Metro Antelope Lodge facilities, swimming pool Matobo, restaurant bar Zimbabwe, conference centre Matobo, kids play area lodge, family lodge Zimbabwe, business meetings Matobo, lodge amenities Zimbabwe, Antelope Dam pool, Matobo restaurant, conference venue Zimbabwe',
+    description: 'Enjoy world-class facilities at Metro Antelope Lodge — swimming pool, restaurant & bar, boating on Antelope Dam, conference centre, and kids\' play area. Located in Maphisa, Matobo, Zimbabwe. Perfect for families, business and leisure guests.',
+    keywords: 'Metro Antelope Lodge facilities, swimming pool Matobo, restaurant bar Zimbabwe, boating Antelope Dam, conference centre Matobo, kids play area lodge, family lodge Zimbabwe, business meetings Matobo, lodge amenities Zimbabwe, fishing Antelope Dam, Matobo restaurant, conference venue Zimbabwe, lake activities Zimbabwe',
   },
   '/gallery': {
     title: 'Photo Gallery | Metro Antelope Lodge — Matobo, Zimbabwe',

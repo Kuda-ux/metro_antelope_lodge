@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { MapPin, Shield, Bed, Star, ArrowRight, Phone, Sun, Mountain, Users, Coffee, Wifi, Zap, TreePine, Camera, Waves, Utensils, Briefcase, Baby, Sparkles } from 'lucide-react'
+import { MapPin, Shield, Bed, Star, ArrowRight, Phone, Sun, Mountain, Users, Coffee, Wifi, Zap, TreePine, Camera, Waves, Utensils, Briefcase, Baby, Sparkles, Sailboat } from 'lucide-react'
 
 const IMG = {
   hero: '/lodge-entrance.jpg',
@@ -260,46 +260,46 @@ export default function Home() {
       </section>
 
       {/* Facilities Preview */}
-      <section className="py-20 md:py-28 bg-gradient-to-b from-white to-brand-light">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="py-20 md:py-28 bg-gradient-to-br from-white via-cyan-50/40 to-brand-light relative overflow-hidden">
+        <div className="absolute top-20 -right-20 w-80 h-80 bg-brand-secondary/10 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-10 -left-20 w-96 h-96 bg-cyan-300/15 rounded-full blur-3xl"></div>
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-2xl mx-auto mb-14">
-            <div className="inline-flex items-center gap-2 bg-brand-secondary/10 text-brand-secondary text-xs font-bold uppercase tracking-wider px-4 py-1.5 rounded-full mb-4">
+            <div className="inline-flex items-center gap-2 bg-gradient-to-r from-brand-primary to-cyan-600 text-white text-xs font-bold uppercase tracking-wider px-4 py-1.5 rounded-full mb-4 shadow-md">
               <Sparkles className="w-3.5 h-3.5" />
-              Coming Soon
+              Facilities & Activities
             </div>
             <h2 className="text-3xl md:text-4xl font-heading font-bold text-brand-dark mb-4">
-              New Facilities Opening Soon
+              More Than Just a Stay
             </h2>
             <p className="text-gray-600 text-lg">
-              We are expanding to make your stay even better — a swimming pool, restaurant & bar, conference centre, and a kids' playing area are on the way.
+              Swim, dine, sail, meet, and play — Metro Antelope Lodge is packed with activities to make every visit memorable.
             </p>
           </div>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-5">
             {[
-              { icon: Waves, title: 'Swimming Pool', desc: 'Refreshing outdoor pool with garden views', color: 'bg-sky-100', text: 'text-sky-600' },
-              { icon: Utensils, title: 'Restaurant & Bar', desc: 'Local & international cuisine, full bar', color: 'bg-amber-100', text: 'text-amber-600' },
-              { icon: Briefcase, title: 'Conference Centre', desc: 'Modern meeting venue for business retreats', color: 'bg-blue-100', text: 'text-brand-primary' },
-              { icon: Baby, title: 'Kids Play Area', desc: 'Safe outdoor play space for the little ones', color: 'bg-green-100', text: 'text-green-600' },
+              { icon: Waves, title: 'Swimming Pool', desc: 'Refreshing outdoor pool', gradient: 'from-sky-400 to-blue-500' },
+              { icon: Utensils, title: 'Restaurant & Bar', desc: 'Local & international cuisine', gradient: 'from-amber-400 to-orange-500' },
+              { icon: Sailboat, title: 'Boating', desc: 'Cruise on Antelope Dam', gradient: 'from-cyan-400 to-teal-500' },
+              { icon: Briefcase, title: 'Conference Centre', desc: 'Meetings & retreats', gradient: 'from-blue-500 to-brand-primary' },
+              { icon: Baby, title: 'Kids Play Area', desc: 'Fun & safe for children', gradient: 'from-green-400 to-emerald-500' },
             ].map((item, i) => (
               <div
                 key={i}
-                className="bg-white rounded-2xl p-6 border border-gray-100 hover:border-brand-secondary/30 hover:shadow-xl transition-all duration-300 group hover:-translate-y-1 relative overflow-hidden"
+                className="bg-white rounded-2xl p-6 border border-gray-100 hover:shadow-2xl transition-all duration-300 group hover:-translate-y-2 relative overflow-hidden"
               >
-                <div className="absolute top-3 right-3 bg-brand-secondary/10 text-brand-secondary text-[10px] font-bold uppercase tracking-wider px-2 py-1 rounded-full">
-                  Soon
+                <div className={`w-14 h-14 bg-gradient-to-br ${item.gradient} rounded-2xl flex items-center justify-center mb-4 group-hover:scale-110 group-hover:rotate-3 transition-all duration-300 shadow-lg`}>
+                  <item.icon className="w-7 h-7 text-white" />
                 </div>
-                <div className={`w-14 h-14 ${item.color} rounded-2xl flex items-center justify-center mb-5 group-hover:scale-110 transition-transform duration-300`}>
-                  <item.icon className={`w-7 h-7 ${item.text}`} />
-                </div>
-                <h3 className="text-lg font-heading font-bold text-brand-dark mb-2">{item.title}</h3>
-                <p className="text-sm text-gray-600 leading-relaxed">{item.desc}</p>
+                <h3 className="text-base font-heading font-bold text-brand-dark mb-1.5">{item.title}</h3>
+                <p className="text-xs text-gray-600 leading-relaxed">{item.desc}</p>
               </div>
             ))}
           </div>
           <div className="text-center mt-12">
             <Link
               to="/facilities"
-              className="inline-flex items-center gap-2 bg-brand-primary hover:bg-brand-primary/90 text-white px-8 py-3.5 rounded-xl font-semibold transition-all duration-200 hover:shadow-lg hover:-translate-y-0.5"
+              className="inline-flex items-center gap-2 bg-gradient-to-r from-brand-primary to-cyan-600 hover:shadow-2xl text-white px-8 py-3.5 rounded-xl font-semibold transition-all duration-200 hover:-translate-y-0.5"
             >
               Explore All Facilities
               <ArrowRight className="w-5 h-5" />
