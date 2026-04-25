@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { MapPin, Shield, Bed, Star, ArrowRight, Phone, Sun, Mountain, Users, Coffee, Wifi, Zap, TreePine, Camera } from 'lucide-react'
+import { MapPin, Shield, Bed, Star, ArrowRight, Phone, Sun, Mountain, Users, Coffee, Wifi, Zap, TreePine, Camera, Waves, Utensils, Briefcase, Baby, Sparkles } from 'lucide-react'
 
 const IMG = {
   hero: '/lodge-entrance.jpg',
@@ -253,6 +253,55 @@ export default function Home() {
               className="inline-flex items-center gap-2 bg-brand-primary hover:bg-brand-primary/90 text-white px-8 py-3.5 rounded-xl font-semibold transition-all duration-200 hover:shadow-lg hover:-translate-y-0.5"
             >
               View All Rooms & Pricing
+              <ArrowRight className="w-5 h-5" />
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Facilities Preview */}
+      <section className="py-20 md:py-28 bg-gradient-to-b from-white to-brand-light">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center max-w-2xl mx-auto mb-14">
+            <div className="inline-flex items-center gap-2 bg-brand-secondary/10 text-brand-secondary text-xs font-bold uppercase tracking-wider px-4 py-1.5 rounded-full mb-4">
+              <Sparkles className="w-3.5 h-3.5" />
+              Coming Soon
+            </div>
+            <h2 className="text-3xl md:text-4xl font-heading font-bold text-brand-dark mb-4">
+              New Facilities Opening Soon
+            </h2>
+            <p className="text-gray-600 text-lg">
+              We are expanding to make your stay even better — a swimming pool, restaurant & bar, conference centre, and a kids' playing area are on the way.
+            </p>
+          </div>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            {[
+              { icon: Waves, title: 'Swimming Pool', desc: 'Refreshing outdoor pool with garden views', color: 'bg-sky-100', text: 'text-sky-600' },
+              { icon: Utensils, title: 'Restaurant & Bar', desc: 'Local & international cuisine, full bar', color: 'bg-amber-100', text: 'text-amber-600' },
+              { icon: Briefcase, title: 'Conference Centre', desc: 'Modern meeting venue for business retreats', color: 'bg-blue-100', text: 'text-brand-primary' },
+              { icon: Baby, title: 'Kids Play Area', desc: 'Safe outdoor play space for the little ones', color: 'bg-green-100', text: 'text-green-600' },
+            ].map((item, i) => (
+              <div
+                key={i}
+                className="bg-white rounded-2xl p-6 border border-gray-100 hover:border-brand-secondary/30 hover:shadow-xl transition-all duration-300 group hover:-translate-y-1 relative overflow-hidden"
+              >
+                <div className="absolute top-3 right-3 bg-brand-secondary/10 text-brand-secondary text-[10px] font-bold uppercase tracking-wider px-2 py-1 rounded-full">
+                  Soon
+                </div>
+                <div className={`w-14 h-14 ${item.color} rounded-2xl flex items-center justify-center mb-5 group-hover:scale-110 transition-transform duration-300`}>
+                  <item.icon className={`w-7 h-7 ${item.text}`} />
+                </div>
+                <h3 className="text-lg font-heading font-bold text-brand-dark mb-2">{item.title}</h3>
+                <p className="text-sm text-gray-600 leading-relaxed">{item.desc}</p>
+              </div>
+            ))}
+          </div>
+          <div className="text-center mt-12">
+            <Link
+              to="/facilities"
+              className="inline-flex items-center gap-2 bg-brand-primary hover:bg-brand-primary/90 text-white px-8 py-3.5 rounded-xl font-semibold transition-all duration-200 hover:shadow-lg hover:-translate-y-0.5"
+            >
+              Explore All Facilities
               <ArrowRight className="w-5 h-5" />
             </Link>
           </div>

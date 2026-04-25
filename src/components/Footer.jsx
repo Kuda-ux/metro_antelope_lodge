@@ -29,6 +29,7 @@ export default function Footer() {
                 { name: 'Home', path: '/' },
                 { name: 'About Us', path: '/about' },
                 { name: 'Our Rooms', path: '/rooms' },
+                { name: 'Facilities', path: '/facilities' },
                 { name: 'Gallery', path: '/gallery' },
                 { name: 'Contact', path: '/contact' },
               ].map((link) => (

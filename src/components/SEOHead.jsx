@@ -19,6 +19,11 @@ const pageSEO = {
     description: 'View our comfortable rooms at Metro Antelope Lodge. Standard, Twin, and Family rooms available. Clean, secure, and affordable accommodation in Antelope Dam, Matobo, Zimbabwe. Book now via WhatsApp.',
     keywords: 'rooms Metro Antelope Lodge, accommodation rates Zimbabwe, standard room Matobo, twin room Zimbabwe, family room lodge, affordable rooms Matobo, lodge rooms Antelope Dam, book room Zimbabwe WhatsApp, cheap accommodation Matobo, hotel rooms Southern Zimbabwe',
   },
+  '/facilities': {
+    title: 'Facilities & Services | Metro Antelope Lodge — Matobo, Zimbabwe',
+    description: 'Discover the new facilities at Metro Antelope Lodge — swimming pool, restaurant & bar, conference centre, and kids\' play area. Coming soon to Antelope Dam, Maphisa, Matobo, Zimbabwe. Perfect for families, business and leisure guests.',
+    keywords: 'Metro Antelope Lodge facilities, swimming pool Matobo, restaurant bar Zimbabwe, conference centre Matobo, kids play area lodge, family lodge Zimbabwe, business meetings Matobo, lodge amenities Zimbabwe, Antelope Dam pool, Matobo restaurant, conference venue Zimbabwe',
+  },
   '/gallery': {
     title: 'Photo Gallery | Metro Antelope Lodge — Matobo, Zimbabwe',
     description: 'Browse photos of Metro Antelope Lodge in Antelope Dam, Maphisa, Matobo, Zimbabwe. See our beautiful green environment, lodge building, rooms, and natural surroundings near the Matobo Hills.',
