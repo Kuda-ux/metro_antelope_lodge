@@ -1,32 +1,35 @@
 import { Bed, Shield, Wifi, Wind, Droplets, Users, ArrowRight, Check } from 'lucide-react'
 
 const IMG = {
-  header: '/lodge-building-1.svg',
-  room1: 'https://images.unsplash.com/photo-1631049307264-da0ec9d70304?auto=format&fit=crop&w=800&q=80',
-  room2: 'https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=800&q=80',
-  room3: 'https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?auto=format&fit=crop&w=800&q=80',
+  header: '/modern-room-exterior.jpg',
+  room1: '/room-standard.jpg',
+  room2: '/room-family.jpg',
+  room3: '/thatched-cottage.jpg',
+  modern2: '/modern-room-exterior-2.jpg',
+  modern3: '/modern-room-exterior-3.jpg',
+  cottage2: '/cottage-tree.jpg',
 }
 
 export default function Rooms() {
   const rooms = [
     {
       title: 'Standard Room',
-      description: 'A cozy and well-equipped room perfect for solo travelers or couples seeking a peaceful and comfortable stay.',
-      features: ['Comfortable Double Bed', 'Fresh Clean Linen', 'Private Room', 'Secure Lock', 'Natural Lighting', 'Quiet Environment'],
+      description: 'An elegant room featuring a plush queen bed with velvet headboard, decorative towel art, and warm sheer curtains. Tiled floors and modern finishes make this the perfect retreat for couples or solo travelers.',
+      features: ['Queen Bed with Plush Headboard', 'Fresh Linen & Towel Art', 'Tiled Floors', 'Secure Lock', 'Natural Lighting', 'Free WiFi'],
       image: IMG.room1,
       highlight: false,
     },
     {
-      title: 'Twin Room',
-      description: 'A spacious room with twin beds, ideal for friends, colleagues, or travelers who prefer separate sleeping arrangements.',
-      features: ['Two Single Beds', 'Extra Floor Space', 'Well-Furnished', 'Secure Lock', 'Natural Lighting', 'Quiet Environment'],
+      title: 'Family Cottage',
+      description: 'A spacious cottage with comfortable beds, wicker seating area, and large windows flooding the room with natural light. Perfect for families or guests wanting extra space and homely comfort.',
+      features: ['Double Bed', 'Wicker Seating Area', 'Spacious Layout', 'Secure Lock', 'Large Windows', 'Free WiFi'],
       image: IMG.room2,
       highlight: true,
     },
     {
-      title: 'Family Room',
-      description: 'Our largest and most spacious room, designed to accommodate families with all the comfort and space you need.',
-      features: ['Multiple Beds', 'Family-Sized Space', 'Comfortable Furnishing', 'Secure Lock', 'Natural Lighting', 'Quiet Environment'],
+      title: 'Thatched Cottage',
+      description: 'Experience authentic African charm in our traditional thatched-roof cottages. Featuring modern interiors with a private veranda, garden views, and the unique character of Zimbabwean architecture.',
+      features: ['Thatched Roof Design', 'Private Veranda', 'Garden & Bush Views', 'Secure Lock', 'Modern Interior', 'Free WiFi'],
       image: IMG.room3,
       highlight: false,
     },
@@ -143,7 +146,7 @@ export default function Rooms() {
       {/* CTA */}
       <section className="relative py-20 md:py-28 overflow-hidden">
         <div className="absolute inset-0">
-          <img src={IMG.header} alt="Book a room" className="w-full h-full object-cover" />
+          <img src={IMG.modern2} alt="Modern room exteriors at Metro Antelope Lodge" className="w-full h-full object-cover" />
           <div className="absolute inset-0 bg-brand-primary/85"></div>
         </div>
         <div className="relative max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">

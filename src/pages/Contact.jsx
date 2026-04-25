@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { Phone, Mail, MapPin, Clock, Send, MessageCircle, ArrowRight } from 'lucide-react'
 
 const IMG = {
-  header: '/lodge-building-2.svg',
+  header: '/lodge-compound.jpg',
 }
 
 export default function Contact() {

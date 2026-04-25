@@ -3,44 +3,94 @@ import { X, ChevronLeft, ChevronRight } from 'lucide-react'
 
 const galleryItems = [
   {
-    title: 'Lodge Green Environment',
-    description: 'The beautiful green surroundings of Metro Antelope Lodge',
-    image: '/lodge-green-1.svg',
+    title: 'Lodge Entrance',
+    description: 'The welcoming entrance of Metro Antelope Lodge with our Siyalamukela sign',
+    image: '/lodge-entrance.jpg',
   },
   {
-    title: 'Natural Surroundings',
-    description: 'Lush greenery surrounding the lodge grounds',
-    image: '/lodge-green-2.svg',
+    title: 'Modern Room Exterior',
+    description: 'Contemporary grey-blue room buildings with modern architecture',
+    image: '/modern-room-exterior.jpg',
   },
   {
-    title: 'Lodge Building',
-    description: 'The welcoming exterior of Metro Antelope Lodge',
-    image: '/lodge-building-1.svg',
+    title: 'Modern Rooms - Front View',
+    description: 'Stylish entrance with glass doors and steel railings',
+    image: '/modern-room-exterior-2.jpg',
   },
   {
-    title: 'Lodge Exterior',
-    description: 'Our well-maintained lodge building in Antelope Dam',
-    image: '/lodge-building-2.svg',
+    title: 'Modern Suite',
+    description: 'Another angle of our beautifully designed modern rooms',
+    image: '/modern-room-exterior-3.jpg',
   },
   {
-    title: 'Standard Room',
-    description: 'Clean and comfortable standard room',
-    image: 'https://images.unsplash.com/photo-1631049307264-da0ec9d70304?auto=format&fit=crop&w=800&q=80',
+    title: 'Thatched Cottage',
+    description: 'Traditional African thatched-roof cottage with private veranda',
+    image: '/thatched-cottage.jpg',
   },
   {
-    title: 'Twin Room',
-    description: 'Spacious twin room with two beds',
-    image: 'https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=800&q=80',
+    title: 'Thatched Cottage - Side View',
+    description: 'Charming cottage with garden surroundings and bush views',
+    image: '/thatched-cottage-2.jpg',
   },
   {
-    title: 'Room Interior',
-    description: 'Well-furnished room with natural lighting',
-    image: 'https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=800&q=80',
+    title: 'Cape Dutch Cottage',
+    description: 'Classic cottage with tree shade and decorative pottery',
+    image: '/cottage-tree.jpg',
   },
   {
-    title: 'Family Room',
-    description: 'Our spacious family accommodation',
-    image: 'https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?auto=format&fit=crop&w=800&q=80',
+    title: 'Standard Room Interior',
+    description: 'Elegant queen bed with plush headboard and towel art',
+    image: '/room-standard.jpg',
+  },
+  {
+    title: 'Family Room Interior',
+    description: 'Spacious family room with wicker seating and natural light',
+    image: '/room-family.jpg',
+  },
+  {
+    title: 'Antelope Dam',
+    description: 'Stunning lake views just steps from the lodge',
+    image: '/antelope-dam.jpg',
+  },
+  {
+    title: 'Lake Panorama',
+    description: 'Wide view of Antelope Dam with hills in the background',
+    image: '/antelope-dam-2.jpg',
+  },
+  {
+    title: 'Dam & Mountains',
+    description: 'Antelope Dam with dramatic mountain scenery',
+    image: '/antelope-dam-3.jpg',
+  },
+  {
+    title: 'Tropical Gardens',
+    description: 'Lush gardens with palm trees and banana plants',
+    image: '/garden-palms.jpg',
+  },
+  {
+    title: 'Garden & Lodge View',
+    description: 'Beautiful garden path leading to the lodge buildings',
+    image: '/garden-view.jpg',
+  },
+  {
+    title: 'Garden Oasis',
+    description: 'Tropical banana trees and hedges in our gardens',
+    image: '/garden-banana.jpg',
+  },
+  {
+    title: 'Lodge Panoramic',
+    description: 'Panoramic view showing both thatched and modern buildings',
+    image: '/lodge-panoramic.jpg',
+  },
+  {
+    title: 'Green Lawns',
+    description: 'Expansive green lawns with the lodge in the background',
+    image: '/lodge-green-lawn.jpg',
+  },
+  {
+    title: 'Solar Power System',
+    description: 'Our green energy solar inverter system ensuring 24/7 power',
+    image: '/solar-power.jpg',
   },
 ]
 
@@ -58,7 +108,7 @@ export default function Gallery() {
       {/* Page Header */}
       <section className="relative min-h-[50vh] flex items-center overflow-hidden">
         <div className="absolute inset-0">
-          <img src="/lodge-green-1.svg" alt="Metro Antelope Lodge Gallery" className="w-full h-full object-cover" />
+          <img src="/antelope-dam-2.jpg" alt="Metro Antelope Lodge Gallery — Real Photos" className="w-full h-full object-cover" />
           <div className="absolute inset-0 bg-gradient-to-r from-brand-dark/80 via-brand-dark/60 to-brand-dark/30"></div>
         </div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-28 w-full">

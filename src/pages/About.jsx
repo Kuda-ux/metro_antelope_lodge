@@ -2,10 +2,13 @@ import { Link } from 'react-router-dom'
 import { Shield, Heart, Sparkles, Home, Users, ArrowRight, Award, Globe } from 'lucide-react'
 
 const IMG = {
-  header: '/lodge-green-1.svg',
-  story: '/lodge-green-2.svg',
-  team: '/lodge-building-2.svg',
-  values: '/lodge-building-1.svg',
+  header: '/garden-view.jpg',
+  story: '/lodge-entrance.jpg',
+  team: '/modern-room-exterior.jpg',
+  values: '/antelope-dam-2.jpg',
+  cottage: '/thatched-cottage.jpg',
+  garden: '/garden-banana.jpg',
+  solar: '/solar-power.jpg',
 }
 
 export default function About() {
@@ -54,7 +57,8 @@ export default function About() {
               </p>
             </div>
             <div className="relative">
-              <img src={IMG.story} alt="Lodge interior" className="rounded-2xl shadow-2xl w-full h-[500px] object-cover" />
+              <img src={IMG.story} alt="Metro Antelope Lodge entrance with welcome signboard" className="rounded-2xl shadow-2xl w-full h-[320px] object-cover" />
+              <img src={IMG.cottage} alt="Traditional thatched cottage at the lodge" className="rounded-2xl shadow-2xl w-full h-[170px] object-cover mt-4" />
               <div className="absolute -bottom-6 -right-6 bg-brand-primary rounded-2xl p-6 text-white hidden md:block shadow-xl">
                 <Award className="w-8 h-8 mb-2 text-brand-secondary" />
                 <p className="font-heading font-bold text-lg">Metro Properties</p>
@@ -133,8 +137,12 @@ export default function About() {
                 </div>
               ))}
             </div>
-            <div>
-              <img src={IMG.team} alt="Our team" className="rounded-2xl shadow-xl w-full h-[400px] object-cover" />
+            <div className="space-y-4">
+              <img src={IMG.team} alt="Modern room exterior at Metro Antelope Lodge" className="rounded-2xl shadow-xl w-full h-[190px] object-cover" />
+              <div className="grid grid-cols-2 gap-4">
+                <img src={IMG.garden} alt="Tropical garden with banana trees" className="rounded-2xl shadow-lg w-full h-[190px] object-cover" />
+                <img src={IMG.solar} alt="Solar power system for green energy" className="rounded-2xl shadow-lg w-full h-[190px] object-cover" />
+              </div>
             </div>
           </div>
         </div>
