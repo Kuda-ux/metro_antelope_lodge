@@ -52,7 +52,7 @@ export default function Footer() {
               <li className="flex items-start gap-3">
                 <Phone className="w-4 h-4 text-brand-secondary mt-0.5 flex-shrink-0" />
                 <div className="text-sm">
-                  <a href="tel:+263780292970" className="text-gray-400 hover:text-white transition-colors block">0780 292 970</a>
+                  <a href="tel:+263785384443" className="text-gray-400 hover:text-white transition-colors block">0785 384 443</a>
                   <a href="tel:+263777776088" className="text-gray-400 hover:text-white transition-colors block mt-1">0777 776 088</a>
                 </div>
               </li>
@@ -74,7 +74,7 @@ export default function Footer() {
             <h3 className="text-white font-semibold mb-4 text-sm uppercase tracking-wider">Book Your Stay</h3>
             <p className="text-sm text-gray-400 mb-4">Ready to experience comfort and tranquility? Get in touch today.</p>
             <a
-              href="https://wa.me/263780292970?text=Hello%2C%20I%20would%20like%20to%20book%20a%20stay%20at%20Metro%20Antelope%20Lodge."
+              href="https://wa.me/263785384443?text=Hello%2C%20I%20would%20like%20to%20book%20a%20stay%20at%20Metro%20Antelope%20Lodge."
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 bg-brand-secondary hover:bg-brand-secondary/90 text-white px-5 py-2.5 rounded-lg text-sm font-semibold transition-all duration-200"

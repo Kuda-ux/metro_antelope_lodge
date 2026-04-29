@@ -1,6 +1,6 @@
 import { MessageCircle } from 'lucide-react'
 
-const WHATSAPP_NUMBER = '263780292970'
+const WHATSAPP_NUMBER = '263785384443'
 const WHATSAPP_MESSAGE = 'Hello, I would like to book a stay at Metro Antelope Lodge.'
 
 export default function WhatsAppButton() {

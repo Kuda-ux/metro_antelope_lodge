@@ -32,7 +32,7 @@ const FAQ_DATA = [
   {
     keywords: ['contact', 'phone', 'call', 'email', 'reach', 'number'],
     question: 'How can I contact you?',
-    answer: 'You can reach us at:\n📞 0780 292 970 / 0777 776 088\n📧 maxwellmncube01@gmail.com\n💬 WhatsApp: +263 780 292 970\nWe respond quickly!',
+    answer: 'You can reach us at:\n📞 0785 384 443 / 0777 776 088\n📧 maxwellmncube01@gmail.com\n💬 WhatsApp: +263 780 292 970\nWe respond quickly!',
   },
   {
     keywords: ['safe', 'secure', 'security', 'safety'],
@@ -149,7 +149,7 @@ export default function Chatbot() {
                   {msg.text}
                   {msg.redirect && (
                     <a
-                      href="https://wa.me/263780292970?text=Hello%2C%20I%20have%20a%20question%20about%20Metro%20Antelope%20Lodge."
+                      href="https://wa.me/263785384443?text=Hello%2C%20I%20have%20a%20question%20about%20Metro%20Antelope%20Lodge."
                       target="_blank"
                       rel="noopener noreferrer"
                       className="mt-2 flex items-center gap-1.5 text-xs font-semibold text-green-600 hover:text-green-700 transition-colors"

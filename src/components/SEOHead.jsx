@@ -31,7 +31,7 @@ const pageSEO = {
   },
   '/contact': {
     title: 'Contact Us | Metro Antelope Lodge — Book Your Stay in Matobo, Zimbabwe',
-    description: 'Contact Metro Antelope Lodge for bookings and enquiries. Located in Antelope Dam, Maphisa, Matobo, Zimbabwe. Call +263780292970 or message us on WhatsApp. We welcome international and local guests.',
+    description: 'Contact Metro Antelope Lodge for bookings and enquiries. Located in Antelope Dam, Maphisa, Matobo, Zimbabwe. Call +263785384443 or message us on WhatsApp. We welcome international and local guests.',
     keywords: 'contact Metro Antelope Lodge, book lodge Zimbabwe, WhatsApp booking Matobo, phone number lodge Zimbabwe, lodge enquiry Matobo, directions Antelope Dam, email Metro Antelope Lodge, Zimbabwe accommodation contact',
   },
 }

@@ -39,7 +39,7 @@ export default function Home() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <a
-                href="https://wa.me/263780292970?text=Hello%2C%20I%20would%20like%20to%20book%20a%20stay%20at%20Metro%20Antelope%20Lodge."
+                href="https://wa.me/263785384443?text=Hello%2C%20I%20would%20like%20to%20book%20a%20stay%20at%20Metro%20Antelope%20Lodge."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-2 bg-green-500 hover:bg-green-600 text-white px-8 py-4 rounded-xl text-lg font-semibold transition-all duration-300 hover:shadow-xl hover:scale-105"
@@ -235,7 +235,7 @@ export default function Home() {
                     ))}
                   </ul>
                   <a
-                    href={`https://wa.me/263780292970?text=Hello%2C%20I%20would%20like%20to%20book%20the%20${encodeURIComponent(room.title)}%20at%20Metro%20Antelope%20Lodge.`}
+                    href={`https://wa.me/263785384443?text=Hello%2C%20I%20would%20like%20to%20book%20the%20${encodeURIComponent(room.title)}%20at%20Metro%20Antelope%20Lodge.`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 bg-green-500 hover:bg-green-600 text-white font-semibold text-sm px-5 py-2.5 rounded-lg transition-all duration-200 group/link"
@@ -341,11 +341,11 @@ export default function Home() {
                   <div className="w-10 h-10 bg-brand-primary/10 rounded-lg flex items-center justify-center">
                     <Phone className="w-5 h-5 text-brand-primary" />
                   </div>
-                  <span className="text-gray-700 font-medium">0780 292 970 / 0777 776 088</span>
+                  <span className="text-gray-700 font-medium">0785 384 443 / 0777 776 088</span>
                 </div>
               </div>
               <a
-                href="https://wa.me/263780292970?text=Hello%2C%20I%20need%20directions%20to%20Metro%20Antelope%20Lodge."
+                href="https://wa.me/263785384443?text=Hello%2C%20I%20need%20directions%20to%20Metro%20Antelope%20Lodge."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 bg-brand-primary hover:bg-brand-primary/90 text-white px-6 py-3 rounded-xl font-semibold transition-all duration-200 hover:shadow-md hover:-translate-y-0.5"
@@ -412,7 +412,7 @@ export default function Home() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="https://wa.me/263780292970?text=Hello%2C%20I%20would%20like%20to%20book%20a%20stay%20at%20Metro%20Antelope%20Lodge."
+              href="https://wa.me/263785384443?text=Hello%2C%20I%20would%20like%20to%20book%20a%20stay%20at%20Metro%20Antelope%20Lodge."
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2 bg-green-500 hover:bg-green-600 text-white px-10 py-4 rounded-xl text-lg font-semibold transition-all duration-300 hover:shadow-xl hover:scale-105"
