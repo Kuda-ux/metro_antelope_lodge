@@ -16,7 +16,7 @@ const FAQ_DATA = [
   {
     keywords: ['book', 'reserve', 'reservation', 'booking', 'available', 'availability'],
     question: 'How do I book?',
-    answer: 'Booking is easy! Simply message us on WhatsApp at +263 780 292 970 with your preferred dates, number of guests, and room type. We will confirm your reservation promptly.',
+    answer: 'Booking is easy! Simply message us on WhatsApp at +263 777 776 088 with your preferred dates, number of guests, and room type. We will confirm your reservation promptly.',
     redirect: true,
   },
   {
@@ -32,7 +32,7 @@ const FAQ_DATA = [
   {
     keywords: ['contact', 'phone', 'call', 'email', 'reach', 'number'],
     question: 'How can I contact you?',
-    answer: 'You can reach us at:\n📞 0785 384 443 / 0777 776 088\n📧 maxwellmncube01@gmail.com\n💬 WhatsApp: +263 780 292 970\nWe respond quickly!',
+    answer: 'You can reach us at:\n📞 0785 384 443 / 0777 776 088\n📧 maxwellmncube01@gmail.com\n💬 WhatsApp: +263 777 776 088\nWe respond quickly!',
   },
   {
     keywords: ['safe', 'secure', 'security', 'safety'],
@@ -149,7 +149,7 @@ export default function Chatbot() {
                   {msg.text}
                   {msg.redirect && (
                     <a
-                      href="https://wa.me/263785384443?text=Hello%2C%20I%20have%20a%20question%20about%20Metro%20Antelope%20Lodge."
+                      href="https://wa.me/263777776088?text=Hello%2C%20I%20have%20a%20question%20about%20Metro%20Antelope%20Lodge."
                       target="_blank"
                       rel="noopener noreferrer"
                       className="mt-2 flex items-center gap-1.5 text-xs font-semibold text-green-600 hover:text-green-700 transition-colors"

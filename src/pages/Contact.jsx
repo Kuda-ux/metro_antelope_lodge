@@ -17,7 +17,7 @@ export default function Contact() {
   const handleSubmit = (e) => {
     e.preventDefault()
     const whatsappMessage = `Hello, my name is ${formData.name}.%0A%0AEmail: ${formData.email}%0APhone: ${formData.phone}%0A%0AMessage: ${formData.message}`
-    window.open(`https://wa.me/263785384443?text=${encodeURIComponent(whatsappMessage.replace(/%0A/g, '\n'))}`, '_blank')
+    window.open(`https://wa.me/263777776088?text=${encodeURIComponent(whatsappMessage.replace(/%0A/g, '\n'))}`, '_blank')
     setSubmitted(true)
     setTimeout(() => setSubmitted(false), 5000)
   }
@@ -120,7 +120,7 @@ export default function Contact() {
                   For the fastest response, message us directly on WhatsApp.
                 </p>
                 <a
-                  href="https://wa.me/263785384443?text=Hello%2C%20I%20would%20like%20to%20make%20an%20enquiry%20about%20Metro%20Antelope%20Lodge."
+                  href="https://wa.me/263777776088?text=Hello%2C%20I%20would%20like%20to%20make%20an%20enquiry%20about%20Metro%20Antelope%20Lodge."
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-xl font-semibold text-sm transition-all duration-200 hover:shadow-lg hover:-translate-y-0.5"
@@ -310,7 +310,7 @@ export default function Contact() {
                   WhatsApp us your location and we'll guide you in.
                 </p>
                 <a
-                  href="https://wa.me/263785384443?text=Hello%2C%20I%20need%20directions%20to%20Metro%20Antelope%20Lodge%2C%20Plot%201%20Tabasnyoni%2C%20Antelope%20Mine%2C%20Maphisa."
+                  href="https://wa.me/263777776088?text=Hello%2C%20I%20need%20directions%20to%20Metro%20Antelope%20Lodge%2C%20Plot%201%20Tabasnyoni%2C%20Antelope%20Mine%2C%20Maphisa."
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 text-green-600 hover:text-green-700 font-semibold text-sm transition-colors"

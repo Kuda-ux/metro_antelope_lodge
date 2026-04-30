@@ -47,7 +47,7 @@ export default function Navbar() {
               </Link>
             ))}
             <a
-              href="https://wa.me/263785384443?text=Hello%2C%20I%20would%20like%20to%20book%20a%20stay%20at%20Metro%20Antelope%20Lodge."
+              href="https://wa.me/263777776088?text=Hello%2C%20I%20would%20like%20to%20book%20a%20stay%20at%20Metro%20Antelope%20Lodge."
               target="_blank"
               rel="noopener noreferrer"
               className="ml-3 bg-brand-primary hover:bg-brand-primary/90 text-white px-6 py-2.5 rounded-lg text-sm font-semibold transition-all duration-200 hover:shadow-lg hover:-translate-y-0.5"
@@ -84,7 +84,7 @@ export default function Navbar() {
               </Link>
             ))}
             <a
-              href="https://wa.me/263785384443?text=Hello%2C%20I%20would%20like%20to%20book%20a%20stay%20at%20Metro%20Antelope%20Lodge."
+              href="https://wa.me/263777776088?text=Hello%2C%20I%20would%20like%20to%20book%20a%20stay%20at%20Metro%20Antelope%20Lodge."
               target="_blank"
               rel="noopener noreferrer"
               className="mt-3 bg-brand-primary text-white px-5 py-3 rounded-lg text-sm font-semibold text-center transition-all hover:bg-brand-primary/90"

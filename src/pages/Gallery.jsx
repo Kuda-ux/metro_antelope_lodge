@@ -229,7 +229,7 @@ export default function Gallery() {
             Contact us for more photos or to arrange a visit to the lodge.
           </p>
           <a
-            href="https://wa.me/263785384443?text=Hello%2C%20I%20would%20like%20to%20see%20more%20photos%20of%20Metro%20Antelope%20Lodge."
+            href="https://wa.me/263777776088?text=Hello%2C%20I%20would%20like%20to%20see%20more%20photos%20of%20Metro%20Antelope%20Lodge."
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-brand-primary hover:bg-brand-primary/90 text-white px-8 py-3.5 rounded-xl font-semibold transition-all duration-200 hover:shadow-lg hover:-translate-y-0.5"

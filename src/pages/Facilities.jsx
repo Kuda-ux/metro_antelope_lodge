@@ -226,7 +226,7 @@ export default function Facilities() {
                     ))}
                   </ul>
                   <a
-                    href={`https://wa.me/263785384443?text=${encodeURIComponent(`Hello, I would like to enquire about the ${f.title} at Metro Antelope Lodge.`)}`}
+                    href={`https://wa.me/263777776088?text=${encodeURIComponent(`Hello, I would like to enquire about the ${f.title} at Metro Antelope Lodge.`)}`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 bg-brand-primary hover:bg-brand-primary/90 text-white px-6 py-3 rounded-xl font-semibold transition-all duration-200 hover:shadow-lg hover:-translate-y-0.5"
@@ -292,7 +292,7 @@ export default function Facilities() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="https://wa.me/263785384443?text=Hello%2C%20I%20would%20like%20to%20book%20a%20stay%20and%20enjoy%20the%20facilities%20at%20Metro%20Antelope%20Lodge."
+              href="https://wa.me/263777776088?text=Hello%2C%20I%20would%20like%20to%20book%20a%20stay%20and%20enjoy%20the%20facilities%20at%20Metro%20Antelope%20Lodge."
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2 bg-green-500 hover:bg-green-600 text-white px-8 py-4 rounded-xl text-lg font-semibold transition-all duration-300 hover:shadow-xl hover:scale-105"

@@ -96,7 +96,7 @@ export default function Rooms() {
                     ))}
                   </ul>
                   <a
-                    href="https://wa.me/263785384443?text=Hello%2C%20I%20would%20like%20to%20enquire%20about%20your%20rooms."
+                    href="https://wa.me/263777776088?text=Hello%2C%20I%20would%20like%20to%20enquire%20about%20your%20rooms."
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 bg-brand-primary hover:bg-brand-primary/90 text-white px-8 py-3.5 rounded-xl font-semibold transition-all duration-200 hover:shadow-lg hover:-translate-y-0.5"
@@ -157,7 +157,7 @@ export default function Rooms() {
             Contact us via WhatsApp for availability and rates. We respond quickly!
           </p>
           <a
-            href="https://wa.me/263785384443?text=Hello%2C%20I%20would%20like%20to%20book%20a%20room%20at%20Metro%20Antelope%20Lodge."
+            href="https://wa.me/263777776088?text=Hello%2C%20I%20would%20like%20to%20book%20a%20room%20at%20Metro%20Antelope%20Lodge."
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-green-500 hover:bg-green-600 text-white px-10 py-4 rounded-xl text-lg font-semibold transition-all duration-300 hover:shadow-xl hover:scale-105"
